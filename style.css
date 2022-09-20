@@ -1,0 +1,14 @@
+#grid{
+    display: grid;
+    width: 800px;
+    padding-left: 400px;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(1px, auto);
+}
+
+#grid div {
+    background: peachpuff;
+    height: 40px;
+    flex: 1;
+}
