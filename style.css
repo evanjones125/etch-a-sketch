@@ -4,21 +4,27 @@
 
 #grid {
     display: grid;
-    width: calc(60px * var(--size));
+    width: 800px;
+    height: 800px;
     margin: auto;
     grid-template-columns: repeat(var(--size), 1fr);
-    gap: 5px;
     grid-auto-rows: minmax(1px, auto);
 }
 
 #grid div {
     background: peachpuff;
-    height: 50px;
-    flex: 1;
 }
 
 #number {
     margin-left: 910px;
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+#number button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
 }

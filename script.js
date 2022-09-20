@@ -11,14 +11,19 @@ for (let i = 0; i < 256; i++) {
     grid.appendChild(test);
 }
 
-// ask user for grid size when button is clicked
+// create new grid when button is clicked
 number.addEventListener('click', function () {
+    // reset current grid
     grid.innerHTML = '';
+
+    // get new grid size from user
     const size = prompt('enter grid size:');
 
     // set css size variable equal to user input
+    // to display correct number of columns
     root.style.setProperty('--size', `${size}`);
 
+    // add new grid squares to the grid
     for (let i = 0; i < size * size; i++) {
         const test = document.createElement('div');
         test.classList.add(`${i + 1}`);
@@ -26,9 +31,7 @@ number.addEventListener('click', function () {
     }
 });
 
-
-
-// create hover effect
+// change individual square's background color when hovered over
 grid.addEventListener('mouseover', function (e) {
     e.target.style.background = 'blue';
 });
